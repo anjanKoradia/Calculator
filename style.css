@@ -25,3 +25,154 @@ body {
   background: var(--bg);
   font-family: "Poppins", sans-serif;
 }
+
+.fas {
+  cursor: pointer;
+}
+
+.github_link a {
+  position: fixed;
+  text-decoration: none;
+  color: var(--color-text);
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  font-weight: bold;
+}
+.github_link a i {
+  margin-right: 0.4rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+.container .title h2 {
+  font-size: 2rem;
+  color: var(--color-text);
+}
+.container .title h2 i {
+  color: var(--color-orange);
+}
+.container .title h1 {
+  font-size: 4rem;
+  color: var(--color-text);
+}
+
+.man_img {
+  width: 220px;
+}
+
+.cal_container {
+  display: flex;
+  align-items: center;
+}
+
+.calculator {
+  width: 300px;
+  height: 580px;
+  border-radius: 20px;
+  background: var(--bg);
+  box-shadow: var(--color-shadow);
+}
+
+.mobile_notch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  padding: 10px 20px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 10px 20px;
+  color: var(--color-text);
+  font-size: 1.2rem;
+}
+.heading p span {
+  color: var(--color-orange);
+  font-size: 5px;
+}
+label input[type="checkbox"] {
+  -webkit-appearance: none;
+}
+label input[type="checkbox"]:checked ~ .fas {
+  color: var(--color-orange);
+}
+
+.result {
+  height: 30%;
+  position: relative;
+}
+.history {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 120px;
+}
+.history .upper-value {
+  width: 100%;
+  text-align: end;
+  word-wrap: break-word;
+  padding: 0 20px;
+  font-size: 20px;
+  color: var(--color-text);
+}
+.output {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.output .lower-value {
+  padding: 5px 20px;
+  font-size: 40px;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.keyboard {
+  padding: 10px 5px 5px 5px;
+}
+.keyboard > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.55rem;
+}
+.operator,
+.number {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: var(--bg);
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+.operator {
+  color: var(--color-orange);
+}
+.number {
+  color: var(--color-text);
+}
+.equal {
+  color: white;
+  background-color: var(--color-orange);
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: var(--color-text);
+  margin: auto;
+}
