@@ -31,7 +31,6 @@ body {
 }
 
 .github_link a {
-  position: fixed;
   text-decoration: none;
   color: var(--color-text);
   display: inline-block;
@@ -175,4 +174,56 @@ label input[type="checkbox"]:checked ~ .fas {
   border-radius: 50px;
   background-color: var(--color-text);
   margin: auto;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 925px) {
+  .container .title h2 {
+    font-size: 1.5rem;
+  }
+  .container .title h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 844px) {
+  .container {
+    flex-direction: column;
+  }
+  .container .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .container .title h1 {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .container {
+    margin: 0;
+  }
+  .container .title h2 {
+    font-size: 1.5rem;
+  }
+  .container .title h1 {
+    font-size: 2.5rem;
+  }
+  .man_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .title h2 {
+    font-size: 1rem;
+  }
+  .container .title h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .title {
+    display: none;
+  }
 }
