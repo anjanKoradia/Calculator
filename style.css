@@ -30,23 +30,10 @@ body {
   cursor: pointer;
 }
 
-.github_link a {
-  text-decoration: none;
-  color: var(--color-text);
-  display: inline-block;
-  padding: 0.2rem 1rem;
-  font-weight: bold;
-}
-.github_link a i {
-  margin-right: 0.4rem;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
-  margin: 0 2rem;
 }
 
 .container .title h2 {
@@ -177,7 +164,12 @@ label input[type="checkbox"]:checked ~ .fas {
 }
 
 /* Media Query */
-
+@media screen and (min-width: 845px) {
+  .container {
+    height: 100vh;
+    padding: 2rem;
+  }
+}
 @media screen and (max-width: 925px) {
   .container .title h2 {
     font-size: 1.5rem;
@@ -194,7 +186,7 @@ label input[type="checkbox"]:checked ~ .fas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2rem 0;
+    padding: 2rem 0;
   }
   .container .title h1 {
     margin: 0 1rem;
@@ -223,7 +215,7 @@ label input[type="checkbox"]:checked ~ .fas {
   }
 }
 @media screen and (max-width: 320px) {
-  .container .title {
-    display: none;
+  .container .title h1 {
+    font-size: 1.8rem;
   }
 }
